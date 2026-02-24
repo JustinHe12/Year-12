@@ -1,0 +1,39 @@
+-- database: c:\Users\heeeh\OneDrive\Desktop\Year 12\database.db
+
+SELECT * FROM "table-name";
+-- database: ./quickflask/database.db
+
+
+SELECT * FROM Bikes
+ORDER BY `BikeID` ;
+
+
+INSERT INTO Bikes (Model, TopSpeed, Cost, Description)
+VALUES
+("Yamaha YZF-R1", 186, 17399, "998cc supersport motorcycle with MotoGP-inspired electronics and aggressive aerodynamics"),
+("Honda CBR600RR", 160, 11799, "599cc supersport bike known for sharp handling and track performance"),
+("Kawasaki Ninja ZX-10R", 186, 16999, "998cc superbike with advanced rider aids and race-developed chassis"),
+("Suzuki GSX-R750", 165, 12999, "750cc sport bike balancing power and lightweight agility"),
+("Ducati Panigale V4", 186, 22495, "1103cc Italian superbike with V4 engine and premium electronics package"),
+("BMW S1000RR", 186, 17895, "999cc superbike featuring dynamic traction control and race ABS"),
+("KTM 390 Duke", 105, 5899, "373cc naked bike ideal for urban riding and beginner sport riders"),
+("Harley-Davidson Iron 883", 105, 9999, "883cc cruiser with classic styling and low-slung riding position"),
+("Triumph Street Triple RS", 165, 12595, "765cc naked sport bike with responsive triple engine"),
+("Aprilia RSV4", 186, 21999, "1099cc V4 superbike with advanced aerodynamic winglets"),
+("Kawasaki Ninja 400", 118, 5499, "399cc lightweight sport bike perfect for new riders"),
+("Honda Rebel 500", 110, 6499, "471cc cruiser offering relaxed ergonomics and smooth parallel twin engine"),
+("Suzuki Hayabusa", 186, 18699, "1340cc hyperbike famous for high-speed stability and strong torque"),
+("Yamaha MT-07", 133, 8199, "689cc naked bike with torquey CP2 engine and agile handling"),
+("Royal Enfield Interceptor 650", 105, 6299, "648cc retro-styled standard motorcycle with classic twin engine"),
+("Zero SR/F", 124, 20495, "Electric naked sport bike with instant torque and advanced connectivity"),
+("Ducati Monster", 149, 11995, "937cc naked motorcycle combining Italian styling and sporty performance"),
+("BMW R1250GS", 125, 17995, "1254cc adventure bike with boxer engine and long-distance comfort"),
+("KTM 1290 Super Duke R", 180, 19999, "1301cc hyper-naked bike known as the Beast for extreme performance"),
+("Honda Africa Twin", 124, 14499, "1084cc adventure motorcycle built for touring and off-road capability");
+("hi", 124, 14499, "i dont know what to put here");
+---dont mind this
+
+
+
+
+SELECT * FROM Bikes;
