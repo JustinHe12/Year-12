@@ -30,8 +30,7 @@ VALUES
 ("BMW R1250GS", 125, 17995, "1254cc adventure bike with boxer engine and long-distance comfort"),
 ("KTM 1290 Super Duke R", 180, 19999, "1301cc hyper-naked bike known as the Beast for extreme performance"),
 ("Honda Africa Twin", 124, 14499, "1084cc adventure motorcycle built for touring and off-road capability");
-("hi", 124, 14499, "i dont know what to put here");
----dont mind this
+
 
 
 

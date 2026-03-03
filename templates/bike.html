@@ -1,0 +1,13 @@
+{%extends "layout.html"%}
+{% block body %}
+ <div class="two-column">
+    <img src="{{ bike[6] }}" alt="{{ bike[2] }}">
+    <div class = "info">
+      <h1>Top Speed: {{ bike[3] }}</h1>
+      <h1>Cost: ${{ bike[4] }}</h1>
+      <h1>Description</h1>
+      <h1>{{ bike[5]}}</h1>
+    </div>
+ </div>
+
+{% endblock %}

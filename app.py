@@ -19,7 +19,7 @@ def get_db():
 def close_connection(exception):
     db = getattr(g, '_database', None)
     if db is not None:
-        db.close
+        db.close()
 
 
 def query_db(query, args=(), one=False):
@@ -37,24 +37,24 @@ def home():
     db = get_db()
     cursor = db.cursor()
     sql = """
-        SELECT Bikes.BikeID,Makers.Name,Bikes.Model,Bikes.Image_URL
+        SELECT Bikes.BikeID, Makers.Name, Bikes.Model, Bikes.Image_URL
         FROM Bikes
-        JOIN Makers ON Makers.MakerID=Bikes.MakerID;
+        LEFT JOIN Makers ON Makers.MakerID = Bikes.MakerID;
     """
     cursor.execute(sql)
     results = cursor.fetchall()
-    return render_template("layout.html")
+    return render_template("home.html", results=results)
    
 @app.route("/bike/<int:id>")
 def bike(id):
     sql = """
     SELECT * FROM Bikes
     JOIN Makers ON Makers.MakerID=Bikes.MakerID
-    WhERE Bikes.BikeID =?;
+    WHERE Bikes.BikeID =?;
 """
-    result = query_db(sql,(id,), True)
-    return str(result)
-
+    results = query_db(sql,(id,), True)
+    return render_template("bike.html", bike=results)
+#render_template("bike.html", bike=result)
 
    
 
